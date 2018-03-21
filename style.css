@@ -1,0 +1,411 @@
+/* web fonts */
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('fonts/glacialindifference.woff2') format('woff2'),
+         url('fonts/glacialindifference.woff') format('woff'),
+         url('fonts/glacialindifference.ttf') format('truetype');
+}
+
+
+
+/* general */
+
+body {
+    margin: 0;
+    font-family: 'Glacial Indifference', arial, verdana, sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+ * {
+   box-sizing: border-box; 
+}
+
+
+
+/* header */
+
+.header {
+    background-color: #fff;
+    color: #000;
+    width: 80%;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-bg {
+    background-color: #fff;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+#header-box {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+#header-box li {
+    display: inline-block;
+}
+
+
+
+/* navigation */
+
+.nav {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff; 
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-bottom: 1%;
+}
+
+.nav li {
+    list-style: none;
+    float: left;
+}
+
+.nav a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    color: #000;
+    transition: all 0.25s ease-in;
+}
+
+.nav-bg {
+    background-color: #fff;
+}
+
+.nav a:hover {
+    color: #fff;
+    background-color: #000;
+    transition: all 0.25s ease-in;
+}
+
+a.active {
+    color: #fff;
+    background-color: #000;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropnav {
+    position: absolute;
+    display: none;
+    z-index: 100;
+}
+
+.dropnav li {
+    color: #000;
+    background-color: #fff;
+    border-top: 2px solid #000;
+}
+
+.dropnav a {
+    width: 98px;
+    padding: 10px 10px;
+}
+
+.dropdown:hover > .dropnav {
+    display: block;
+}
+
+
+
+/*portfolio */
+
+#portfolio {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery-item a {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: all 0.5s ease-in;
+}
+
+.gallery-item a:hover {
+    background-color: rgba( 255, 255, 255, 0.50 );
+    transition: all 0.5s ease-in;
+}
+
+#australia {
+    background-image: url('images/Perth_pano_4.jpg');
+    background-size: cover;
+    height: 400px;
+    margin: 1%;
+}
+
+#malaysia {
+    background-image: url('images/Malaysia_6.jpg');
+    background-size: cover;
+    height: 400px;
+    margin: 1%;
+}
+
+#singapore {
+    background-image: url('images/Singapore_4.jpg');
+    background-size: cover;
+    height: 400px;
+    margin: 1%;
+}
+
+#india {
+    background-image: url('images/India_2.jpg');
+    background-size: cover;
+    height: 400px;
+    margin: 1%;
+}
+
+.caption-row {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.caption-row h3 {
+    border-top: 1px solid #000;
+    width: 100%;
+    padding-top: 5px;
+    margin-bottom: 1%;
+    font-weight: normal;
+}
+
+
+
+/* gallery pages */
+
+.img-row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img-small {
+    width: 50%;
+    float: left;
+    padding: 1%;
+}
+
+.img-large {
+    padding: 1%;
+}
+
+.img-large-left {
+    padding: 1%;
+    width: 50%;
+    float: left;
+}
+
+
+
+/* contact page*/
+
+.about-row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-row {
+    width: 100%;
+}
+
+.contact-row img {
+    float: left;
+    width: 25%;
+    padding-right: 3%;
+}
+
+.bio {
+    float: left;
+    line-height: 1.5em;
+    width: 75%;
+}
+
+.bio p:nth-child(1) {
+    margin-top: 0;
+}
+
+
+
+/* footer */
+
+.footer {
+    width: 80%;
+    margin: 3% auto 0;
+    height: 100px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-top: 2px solid #000;
+}
+
+.footer-bg {
+    background-color: #fff;
+}
+
+.footer a {
+    color: #000;
+    text-decoration: none;
+    padding: 4px 25px;
+    transition: all 0.25s ease-in;
+}
+
+.footer a:hover {
+    color: #fff;
+    background-color: #000;
+    transition: all 0.25s ease-in;
+}
+
+
+/* animation on images*/
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+
+.fade-in {
+    opacity:0;
+    animation:fadeIn ease-in 1;
+    animation-fill-mode:forwards;
+    animation-duration:1.5s;
+}
+ 
+
+
+/* clearfix */
+
+.clearfix::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+
+
+/* responsive */
+
+@media screen and (min-width: 1500px) {
+    
+    .bio p {
+        margin: 4%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 900px) {
+    
+    #australia {
+        background-image: url('images/Perth_pano_3.jpg');
+        background-position: right center;
+    }
+    
+    #singapore {
+        background-image: url('images/Singapore_1.jpg');
+        background-position: top center;
+    }
+    
+    #malaysia {
+        background-image: url('images/Malaysia_10.jpg');
+        background-position: top left;
+    }
+    
+    #india {
+        background-image: url('images/India_3.jpg');
+        background-position: top center;
+    }
+}
+    
+    
+
+@media screen and (max-width: 768px) {
+    
+    .nav li {
+        float: none;
+    }
+    
+    .nav {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .nav a {
+        width: 100%;
+        font-size: 1.25em;
+    }
+    
+    .dropdown:hover > .dropnav {
+    display: none;
+    }   
+    
+    #logo {
+    width: 100%;
+    text-align: center;
+    }
+    
+    .header {
+        height: 150px;
+    }
+    
+    #header-box {
+        position: relative;
+        text-align: center;
+    }
+    
+    .img-small, .img-large-left {
+        float: none;
+        width: 100%;
+    }
+    
+    .caption-row h3,
+    .footer p,
+    .footer a,
+    .contact-row p {
+    font-size: 1.25em;
+    }
+    
+    .contact-row img {
+        display: none;
+    }
+    
+    .bio {
+        padding-top: 3%;
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    
+    .caption-row {
+        padding: 2% 0;
+    }
+    
+}
+
